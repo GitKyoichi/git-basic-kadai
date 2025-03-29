@@ -1,0 +1,29 @@
+PS D:\samurai\git_challenge> git status
+On branch main
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\samurai\git_challenge> git add hello_world.txt
+PS D:\samurai\git_challenge> git commit -m "1行追加 Hello, world!"
+[main d63fd17] 1行追加 Hello, world!
+ 1 file changed, 1 insertion(+)
+PS D:\samurai\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\samurai\git_challenge> git add hello_world.txt
+PS D:\samurai\git_challenge> git commit -m "日本語訳追加"
+[main 4d95b00] 日本語訳追加
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS D:\samurai\git_challenge> type hello_world.txt
+Hello, world!
+縺薙ｓ縺ｫ縺｡縺ｯ縲∽ｸ也阜・
+PS D:\samurai\git_challenge> git log --oneline
+4d95b00 (HEAD -> main) 日本語訳追加
+d63fd17 1行追加 Hello, world!
